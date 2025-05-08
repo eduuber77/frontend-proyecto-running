@@ -66,7 +66,7 @@ const RegistroPage: React.FC = () => {
         };
         
         // Llamamos al servicio de registro
-        const user = await authService.register(registerData);
+        await authService.register(registerData);
 
         // Mostramos un mensaje de éxito
         toast.success('Registro exitoso');
